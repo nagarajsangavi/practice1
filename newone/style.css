@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.75)50%,#9688S),url(cool.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width:1200px;
+    color:gainsboro;
+    margin:auto;
+}
+.logo{
+    width:90px;
+    float: left; 
+}
+.icon{
+    color:gold;
+    font-size: 50px;
+    font-family:Arial;
+    margin-top:15px;
+    float: left;
+    
+}
+.menu{
+    width: 400px;
+    height: 75vh;
+    float:right;
+}
+ul{
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 20px;
+} 
+ul li a {
+    text-decoration:none;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    transition:0.4s ease-in-out;
+}   
+ul li a:hover{
+    width: 100%;
+    color:gold;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+            display: flex;
+            flex-direction:column;
+            align-items: flex-start;
+            padding: 0px;
+            margin: 0px;
+            justify-content:center;
+            align-content:center;
+            height:100vh;
+        }
+
+        input {
+            width: 10%;
+            margin-bottom:5px;
+            padding:10px;
+            align-items:right;
+        }
+
+        button {
+            color:white;
+            background-color:green;
+            font-size:16px;
+        }
+
+        form {
+            background-color: skyblue;
+            color: aliceblue;
+            margin-top:50px;
+            margin-bottom:50px;
+            padding:200px;
+
+        }
+
+        label {
+            display: block;
+            margin-right: 20px;
+            align-items: right;
+        }
+
+        div{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="fname">Full name</label>
+
+            <input type="text" id="fname" placeholder="Full name" required><br>
+            <label for="numb">contact number</label>
+
+             <input type="text" id="numb" placeholder="numb" required><br>
+
+        </div>
+        <label for="Email">Email id</label>
+
+        <input type="text" id="Email" placeholder="Email id" required><br>
+
+
+        
+
+        <button type="submit">submit</button>
+    </form>
+
+
+</body>

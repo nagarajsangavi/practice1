@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav .head {
+    background-color: white;
+    position: relative;
+    height: 100px;
+    max-width: 1250px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .logo img {
+    margin-left: 50px;
+    height: 60px;
+}
+.sub-head {
+    display: flex;
+    align-items: center;
+}
+.sub-head .but{
+    margin-top: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.sub-head .but button{
+    color: white;
+    background-color: orange;
+    height: 40px;
+    width: 100px;
+}
+.sub-head .linkedin {
+    margin-top: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.sub-head .linkedin img{
+    width: 40px;
+    height: 38px;
+}
+.sub-head .sap {
+    margin-right: 50px;
+    cursor: pointer;
+}
+.sub-head .sap img{
+    width: 130px;
+    height: 40px;
+}
+.great img {
+    width: auto;
+    height: 90px;
+    cursor: pointer;
+}
+/* ---------------------------------------------header--------------------------------------------- */
+.main {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 90vh;
+    background-color: #e6a92b;
+}
+.main .nav-links {
+    display: flex;
+    justify-content: center;
+}
+.nav-links li {
+    margin: 20px;
+    list-style:none;
+}
+.nav-links li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+    background: #3a3b3c;
+}
+.company-box {
+    position: absolute;
+    top: 85px;
+    width: 1250px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.company-box .content1 {
+     background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.content1 .row1 {
+    width: calc(25%-30px);
+    line-height: 15px;
+}
+.content1 .row1 header {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content1 .row1 .company-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+.content1 .row1:nth-child(1),
+.content1 .row1:nth-child(2) {
+    border-left: 0px;
+}
+.row1 .company-links li a {
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+    list-style:circle;
+}
+.nav-links li:hover .company-box,
+.nav-links li:hover .hire-box,
+.nav-links li:hover .sap-box {
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+.sap-box {
+    position: absolute;
+    top: 85px;
+    width: 1250px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.sap-box .content {
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.content .row {
+    width: calc(25%-30px);
+    line-height: 15px;
+}
+.content .row header {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .row .sap-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+.content .row:nth-child(1),
+.content .row:nth-child(2) {
+    border-left: 0px;
+}
+.row .sap-links li a {
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+}
+.hire-box {
+    position: absolute;
+    top: 85px;
+    width: 1250px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.hire-box .content2 {
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.content2 .row2 {
+    width: calc(25%-30px);
+    line-height:15px;
+}
+.content2 .row2 header {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content2 .row2 .hire-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+.content2 .row2:nth-child(1),
+.content2 .row2:nth-child(2) {
+    border-left: 0px;
+}
+.row2 .hire-links li a {
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+}
+.main .call {
+    top: 20px;
+    display: flex;
+    float: right;
+}
+.call img {
+    margin: 10px;
+    height: 35px;
+    width: 35px;
+}
+.call p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.slide{
+    /* display: flex; */
+    position: fixed;
+    top: 40%;
+    display:table;
+    /* height: 75vh; */
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+}
+.cont{
+    display: flex;
+}
+.msg{
+    display: flex;
+    
+}
+.cont img{
+    height: 30px;
+    width: 35px;    
+    cursor: pointer;
+}
+.cont p{
+    left: 35px;
+    height: 35px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: white;
+    width: 180px;   
+}
+.slide .cont p{
+    visibility: hidden;
+    transition: all 0.3s;
+}
+ .slide .cont:hover p {
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+.cont .number{
+    display: flex;
+    justify-content: center;
+}
+.msg img{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.msg p{
+    left: 35px;
+    height: 35px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: white;
+    width: 180px;   
+}
+
+.slide .msg p{
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.slide .msg:hover p {
+    background-color: #ffffff;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+ .main .sub-main{
+    height: 450px;
+    /* max-width: 1000px; */
+    /* padding: 30 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+ .sub-main .para{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-left:160px; 
+} 
+.sub-main .photo img{
+    margin-right: 30px;
+    width: 350px;
+    height: 350px;
+}
